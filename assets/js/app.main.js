@@ -1,5 +1,5 @@
 window.onload = () => {
-    console.log(randomInt(1, 999999999999));
+    /* console.log(randomInt(1, 999999999999)); */
     fetchData('home');
     let tm=document.querySelectorAll('.txtMenu'),a,o;
 	for(let i=0;i<tm.length;i++)
@@ -22,29 +22,13 @@ function toggleElement(element){
 function hps(a,b){
 	history.pushState({page: a}, '', b);
 }
-function inicioFin(a){
-	let j='';
-	for( let o of a ){
-		( '{'===o || '['===o || ']'===o || '}'===o )&&function(){
-			j+=o
-		}();
-	}
-	m=JSON.parse(a)
-	console.log( m )
-}
 function fetchData(a){
     if (validFetch){
-        fetch(http+'\/\/'+host+'/api',
-        {
-            method : 'POST',
-            headers : {'Content-Type' : 'application/json'},
-            body :  JSON.stringify({'pathname': a})
-        })
+        fetch(http+'\/\/'+host+'/api/index.html')
         .then(response => response.text())
         .then(data => {
 			/*  */
-			inicioFin(data);
-            document.querySelector('.context').innerHTML=data;
+            document.querySelector('.contenido').innerHTML=data;
 			switch(a){
 				case 'home': hps(a,'/'); document.title='Inicio';  document.querySelector('.title-context').textContent='Inicio';
 					break;
