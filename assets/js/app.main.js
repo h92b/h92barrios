@@ -54,18 +54,18 @@ window.onclick = function(e){
 	b=function(){
         let a = 'undefined' != typeof e.target.href;
         a ? b = search : 'undefined' != e.target.parentElement.href ? b = search : 0 ;
-        return b;
+        return b.replace(/\?/,'');
     }();
-    switch(search){
-        case '?home' : fetchData('home');
+    switch(b){
+        case 'home' : fetchData('home');
             break;
-        case '?about' : fetchData('about');
+        case 'about' : fetchData('about');
             break;
-        case '?tools' : fetchData('tools');
+        case 'tools' : fetchData('tools');
             break;
-        case '?hobbits' : fetchData('hobbits');
+        case 'hobbits' : fetchData('hobbits');
             break;
-        case '?acercade' : fetchData('acercade');
+        case 'acercade' : fetchData('acercade');
             break;
 		default: c=true;
     }
