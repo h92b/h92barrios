@@ -57,15 +57,15 @@ window.onclick = function(e){
         return b;
     }();
     switch(b){
-        case url : fetchData('home');
+        case url+'?home' : fetchData('home');
             break;
-        case url+'about' : fetchData('about');
+        case url+'?about' : fetchData('about');
             break;
-        case url+'tools' : fetchData('tools');
+        case url+'?tools' : fetchData('tools');
             break;
-        case url+'hobbits' : fetchData('hobbits');
+        case url+'?hobbits' : fetchData('hobbits');
             break;
-        case url+'acercade' : fetchData('acercade');
+        case url+'?acercade' : fetchData('acercade');
             break;
 		default: c=true;
     }
