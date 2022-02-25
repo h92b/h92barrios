@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 	<script>
-        const http = window.location.protocol,host = window.location.host,pathname = window.location.pathname,lang=window.navigator.language,hash=window.location.hash,search=window.location.search,id_ajax=http+'\/\/'+host+'\/forms\/id_ajax.php',id_user=http+'\/\/'+host+'\/forms\/id.php',logOut=http+'\/\/'+host+'\/forms\/logout.php';
+        const http = window.location.protocol,host = window.location.host,pathname = window.location.pathname,lang=window.navigator.language,hash=window.location.hash,search=window.location.search;
         
-        history.pushState({page: 'home'}, '', '/');
+        history.pushState({page: 'home'}, '', '/portfolio');
         
         var userAg=window.navigator.userAgent,mobile="undefined"!=typeof window.navigator&&/Mobile/.test(userAg),mac="undefined"!=typeof window.navigator&&/Macintosh/.test(userAg),msie="undefined"!=typeof window.navigator&&/MSIE/.test(userAg),oprWebkit="undefined"!=typeof window.navigator&&!/Opera/.test(userAg)&&/WebKit/.test(userAg),script = document.createElement('script'),actived = true,XhrOrFetch;
         
@@ -123,7 +123,7 @@
             <span>Creado por: <a href="#">h92barrios &lt;/&gt;</a></span>
         </div>
     </footer>
-	<script src="portfolio/assets/js/app.main.js"></script>
+	<script src="assets/js/app.main.js"></script>
 </body>
 
 </html>

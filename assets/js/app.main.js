@@ -30,7 +30,7 @@ function fetchData(a){
 			/*  */
             document.querySelector('.contenido').innerHTML=data;
 			switch(a){
-				case 'home': hps(a,'/portfolio'); document.title='Inicio';  document.querySelector('.title-context').textContent='Inicio';
+				case 'home': hps(a,'?home'); document.title='Inicio';  document.querySelector('.title-context').textContent='Inicio';
 					break;
 				case 'about': hps(a,'?about'); document.title='Sobre Mi'; document.querySelector('.title-context').textContent='Sobre Mi';
 					break;
