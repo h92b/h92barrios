@@ -50,7 +50,7 @@ window.onpopstate = function(e){
 }
 window.onclick = function(e){
     e.preventDefault();
-    let a,b,c=false,url=http+'\/\/'+host+'\/portfolio\/';
+    let a,b,c=false,url=http+'\/\/'+host+'\/portfolio';
 	b=function(){
         let a = 'undefined' != typeof e.target.href;
         a ? b = e.target.href : 'undefined' != e.target.parentElement.href ? b = e.target.parentElement.href : 0 ;
