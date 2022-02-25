@@ -32,13 +32,13 @@ function fetchData(a){
 			switch(a){
 				case 'home': hps(a,'/portfolio'); document.title='Inicio';  document.querySelector('.title-context').textContent='Inicio';
 					break;
-				case 'about': hps(a,'/about'); document.title='Sobre Mi'; document.querySelector('.title-context').textContent='Sobre Mi';
+				case 'about': hps(a,'?about'); document.title='Sobre Mi'; document.querySelector('.title-context').textContent='Sobre Mi';
 					break;
-				case 'tools': hps(a,'/tools'); document.title='herramientas';  document.querySelector('.title-context').textContent='Herramientas';
+				case 'tools': hps(a,'?tools'); document.title='herramientas';  document.querySelector('.title-context').textContent='Herramientas';
 					break;
-				case 'hobbits': hps(a,'/hobbits'); document.title='Pasatiempos'; document.querySelector('.title-context').textContent='Pasatiempos';
+				case 'hobbits': hps(a,'?hobbits'); document.title='Pasatiempos'; document.querySelector('.title-context').textContent='Pasatiempos';
 					break;
-				case 'acercade': hps(a,'/acercade'); document.title='Acerca De'; document.querySelector('.title-context').textContent='Acerca De';
+				case 'acercade': hps(a,'?acercade'); document.title='Acerca De'; document.querySelector('.title-context').textContent='Acerca De';
 					break;
 			}
         })
