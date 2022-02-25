@@ -24,7 +24,7 @@ function hps(a,b){
 }
 function fetchData(a){
     if (validFetch){
-        fetch(http+'\/\/'+host+'/api/index.html')
+        fetch(http+'\/\/'+host+'/portfolio/api/index.html')
         .then(response => response.text())
         .then(data => {
 			/*  */
@@ -50,7 +50,7 @@ window.onpopstate = function(e){
 }
 window.onclick = function(e){
     e.preventDefault();
-    let a,b,c=false,url=http+'\/\/'+host+'\/';
+    let a,b,c=false,url=http+'\/\/'+host+'\/portfolio\/';
 	b=function(){
         let a = 'undefined' != typeof e.target.href;
         a ? b = e.target.href : 'undefined' != e.target.parentElement.href ? b = e.target.parentElement.href : 0 ;
