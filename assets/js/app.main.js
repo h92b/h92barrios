@@ -53,19 +53,19 @@ window.onclick = function(e){
     let a,b,c=false,url=http+'\/\/'+host+'\/portfolio';
 	b=function(){
         let a = 'undefined' != typeof e.target.href;
-        a ? b = search : 'undefined' != e.target.parentElement.href ? b = search : 0 ;
-        return b.replace(/\?/,'');
+        a ? b = e.target.href : 'undefined' != e.target.parentElement.href ? b = e.target.parentElement.href : 0 ;
+        return b;
     }();
     switch(b){
-        case 'home' : fetchData('home');
+        case url : fetchData('home');
             break;
-        case 'about' : fetchData('about');
+        case url+'about' : fetchData('about');
             break;
-        case 'tools' : fetchData('tools');
+        case url+'tools' : fetchData('tools');
             break;
-        case 'hobbits' : fetchData('hobbits');
+        case url+'hobbits' : fetchData('hobbits');
             break;
-        case 'acercade' : fetchData('acercade');
+        case url+'acercade' : fetchData('acercade');
             break;
 		default: c=true;
     }
