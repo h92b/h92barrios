@@ -56,16 +56,16 @@ window.onclick = function(e){
         a ? b = e.target.href : 'undefined' != e.target.parentElement.href ? b = e.target.parentElement.href : 0 ;
         return b;
     }();
-    switch(b){
-        case url : fetchData('home');
+    switch(search){
+        case '?home' : fetchData('home');
             break;
-        case url+'about' : fetchData('about');
+        case '?about' : fetchData('about');
             break;
-        case url+'tools' : fetchData('tools');
+        case '?tools' : fetchData('tools');
             break;
-        case url+'hobbits' : fetchData('hobbits');
+        case '?hobbits' : fetchData('hobbits');
             break;
-        case url+'acercade' : fetchData('acercade');
+        case '?acercade' : fetchData('acercade');
             break;
 		default: c=true;
     }
