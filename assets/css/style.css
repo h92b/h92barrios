@@ -53,6 +53,7 @@ h1{
 /*  */
 header h1{
     margin: 8px;
+	letter-spacing: 0.07rem;
 }
 header{
     margin: auto;
@@ -117,6 +118,7 @@ footer div.by-footer{
 footer div.by-footer > span{
 	padding: 4px 10px;
 	font-size: .9rem;
+	letter-spacing: .03rem;
 }
 /* interno main */
 .nav{
@@ -176,6 +178,8 @@ footer div.by-footer > span{
 .upmenu li, .upmenu li a{
 	display: block;
 	padding: 0 20px;
+	font-size: 1rem;
+    letter-spacing: .04rem;
 }
 .upmenu li{
 	padding: 6px 0;
@@ -196,6 +200,8 @@ aside ul li a i{
     height: 39px;
 	padding-left: 14px;
 	padding-right: 14px;
+	font-size: 1rem;
+    letter-spacing: .04rem;
 }
 .left-footer > ul > li > a > i, .right-footer > ul > li > a > i{
 	margin-left: 8px;
