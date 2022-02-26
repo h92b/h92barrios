@@ -236,6 +236,8 @@ aside ul li a i{
 @media( max-width:400px ){
     footer{
 		display:block;
+		left: 0px;
+		top: 90%;
 	}
 	footer > div {
 		width: 100%;
