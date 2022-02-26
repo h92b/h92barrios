@@ -233,6 +233,14 @@ aside ul li a i{
 @media( max-width:900px ){
     
 }
-@media( max-width:700px ){
-    
+@media( max-width:400px ){
+    footer{
+		display:block;
+	}
+	footer > div {
+		width: 100%;
+	}
+	.left-footer, .right-footer{
+		width: 50%;
+	}
 }
