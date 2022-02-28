@@ -1,3 +1,4 @@
+/* code by h92barrios */
 window.onload = () => {
     /* console.log(randomInt(1, 999999999999)); */
     fetchData('home');
