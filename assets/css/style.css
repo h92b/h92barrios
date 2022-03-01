@@ -205,7 +205,7 @@ aside ul li a i{
     letter-spacing: .04rem;
 }
 .left-footer > ul > li > a > i, .right-footer > ul > li > a > i{
-	margin-left: 8px;
+	margin-right: 8px;
 }
 .left-footer:hover, .right-footer:hover{
 	background: #000;
